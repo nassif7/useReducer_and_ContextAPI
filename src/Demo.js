@@ -16,7 +16,14 @@ const Demo = () => {
   //   getData();
   // }, []);
 
-  return <div onClick={() => actions.changeTheme()}> hello </div>;
+  return (
+    <>
+      <p>
+        <b>{state.darkMode ? "Dark Mode" : "Light Mode"}</b>
+      </p>
+      <button onClick={() => actions.changeTheme()}> Click </button>
+    </>
+  );
 };
 
 export default Demo;

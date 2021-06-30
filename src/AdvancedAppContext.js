@@ -6,6 +6,7 @@ export const AppContext = createContext({
 });
 
 const appContextReducer = (state, action) => {
+  console.log(action, state);
   switch (action.type) {
     case "CHNAGE_THEME": {
       return {
